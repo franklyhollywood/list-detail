@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Character({ character }) {
   return (
     <>
@@ -10,6 +12,7 @@ export default function Character({ character }) {
       <div>name: {character.name} </div>
       <div>position: {character.position}</div>
       <div>allies: {character.allies}</div>
+      <Link to="/">Back</Link>
     </>
   );
 }

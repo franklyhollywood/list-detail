@@ -18,5 +18,10 @@ exports[`renders the character view 1`] = `
     allies: 
     Royal Earthbender Guards
   </div>
+  <a
+    href="/"
+  >
+    Back
+  </a>
 </div>
 `;
