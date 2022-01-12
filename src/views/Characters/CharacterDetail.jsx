@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getCharacter } from '../../services/avatarAPI.js';
 import Character from '../../components/Characters/Character.jsx';
+import { Flex } from '@chakra-ui/react';
 
 export default function CharacterDetail() {
   const [character, setCharacter] = useState({});
@@ -19,13 +20,11 @@ export default function CharacterDetail() {
 
   return (
     <>
-      <div>
-        {loading ? (
-          <h1>loading character...</h1>
-        ) : (
-          <Character character={character} />
-        )}
-      </div>
+      {loading ? (
+        <h1>loading character...</h1>
+      ) : (
+        <Character character={character} />
+      )}
     </>
   );
 }
