@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom';
 import styles from '../../App.css';
-import { Flex, Center, Grid, SimpleGrid, Box, Button } from '@chakra-ui/react';
+import {
+  Flex,
+  Center,
+  Grid,
+  SimpleGrid,
+  Box,
+  Button,
+  GridItem,
+} from '@chakra-ui/react';
 export default function Characters({ characters }) {
   return (
     <ul className={styles.ul}>
